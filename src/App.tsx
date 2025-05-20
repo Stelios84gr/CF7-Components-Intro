@@ -10,8 +10,9 @@ function App() {
       {/*<ArrowFunctionalComponent/>*/}
       <ArrowFunctionalComponentWithPropsType
           title="Is an Arrow Functional Component with Props"
-          description="this is a description"/>
-      </>
+          description="this is a description"
+      />
+    </>
   )
 }
 
