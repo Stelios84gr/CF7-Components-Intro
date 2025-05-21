@@ -3,14 +3,18 @@
 //     description: string;
 // }
 
+//              OR
+
 // type A = {
 //     title: string;
 // }
 // type B = {
 //     description: string;
 // }
-//
+
 // type MergedProps = A & B
+
+//             OR
 
 interface Props {
     title: string;
@@ -19,6 +23,13 @@ interface Props {
 interface Props {
     description: string;
 }
+
+//  declaration merging
+
+// interface Props {
+//     title: string;
+//     description: string;
+// }
 
 const ArrowFunctionalComponentWithProps = ({title, description}: Props) => {
     return (
