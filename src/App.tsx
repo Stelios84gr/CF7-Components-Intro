@@ -8,6 +8,7 @@ function App() {
     {/*<ClassComponent/>*/}
       {/*<FunctionalComponent/>*/}
       {/*<ArrowFunctionalComponent/>*/}
+      {/*  <ArrowFunctionalComponentWithProps title="Is an Arrow Functional Component with Props!"/>*/}
       <ArrowFunctionalComponentWithPropsType
           title="Is an Arrow Functional Component with Props"
           description="this is a description"
