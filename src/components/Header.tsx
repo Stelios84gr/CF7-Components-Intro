@@ -1,5 +1,3 @@
-// import CodingFactoryLogo from "./CodingFactoryLogo.tsx";
-
 import CodingFactoryLogo from "./CodingFactoryLogo.tsx";
 
 const Header = () => {
