@@ -27,7 +27,9 @@ const todoReducer = (state: TodoProps[], action: Action): TodoProps[] => {
 }
 
 const Todo = () =>{
+
     const [todos, dispatch] = useReducer(todoReducer, []);
+    // const [todos, setTodos] = useState([]); // με useState
 
     return (
         <>
