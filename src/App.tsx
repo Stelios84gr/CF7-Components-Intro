@@ -1,9 +1,11 @@
 // import ViteIntro from "./pages/ViteIntro.tsx";
 // import ClassComponent from "./components/ClassComponent.tsx";
 // import FunctionalComponent from "./components/FunctionalComponent.tsx";
+// import ArrowFunctionalComponent from "./components/ArrowFunctionalComponent.tsx";
+// import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWithProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import CodingFactoryLogo from "./components/CodingFactoryLogo";
-import Layout from "./components/Layout.tsx";
+// import Layout from "./components/Layout.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import NameChanger from "./components/NameChanger.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
@@ -12,20 +14,21 @@ import Layout from "./components/Layout.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithReducer from "./components/CounterWithReducer.tsx";
-import Todo from "./components/Todo/Todo.tsx";
 
 
 function App() {
 
   return (
     <>
-        <Layout>
+        {/*<Layout>*/}
       {/*<ViteIntro/>*/}
     {/*<ClassComponent/>*/}
-      {/*<FunctionalComponent/>*/}
-      {/*<ArrowFunctionalComponent/>*/}
-      {/*  <ArrowFunctionalComponentWithProps title="Is an Arrow Functional Component with Props!"/>*/}
-      {/*<ArrowFunctionalComponentWithPropsType*/}
+    {/*  <FunctionalComponent/>*/}
+    {/*  <ArrowFunctionalComponent/>*/}
+    {/*    <ArrowFunctionalComponentWithProps title="Is an Arrow Functional Component with Props!"/>*/}
+    {/*  <ArrowFunctionalComponentWithPropsType*/}
+    {/*      title="Is an Arrow Functional Component with Props!"*/}
+    {/*      description="This is a description."/>*/}
       {/*    title="Is an Arrow Functional Component with Props"*/}
       {/*    description="this is a description"*/}
       {/*  <ClassComponentWithState/>*/}
@@ -36,10 +39,9 @@ function App() {
       {/*      <CounterAdvanced />*/}
       {/*      <CounterWithCustomHook/>*/}
       {/*      <CounterWithReducer/>*/}
-            <Todo/>
-        </Layout>
+      {/*  </Layout>*/}
     </>
-  )
+  );
 }
 
 export default App

@@ -5,33 +5,28 @@
 
 //              OR
 
-// type A = {
-//     title: string;
-// }
-// type B = {
-//     description: string;
-// }
-
-// type MergedProps = A & B
-
-//             OR
-
-interface Props {
+type A = {
     title: string;
 }
-
-interface Props {
+type B = {
     description: string;
 }
 
-//  declaration merging
+type MergedProps = A & B
+
+//             OR
+
+// declaration merging
 
 // interface Props {
 //     title: string;
+// }
+//
+// interface Props {
 //     description: string;
 // }
 
-const ArrowFunctionalComponentWithProps = ({title, description}: Props) => {
+const ArrowFunctionalComponentWithProps = ({title, description}: MergedProps) => {
     return (
         <>
         <h1 className="text-center mt-12 text-xl font-bold">{title}</h1>;
