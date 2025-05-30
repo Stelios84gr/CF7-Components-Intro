@@ -1,4 +1,4 @@
-// import React from "react";
+// import React from "react";   // not needed since React 17+
 // import CodingFactoryLogo from "./CodingFactoryLogo.tsx";
 import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";

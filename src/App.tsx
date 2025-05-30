@@ -5,9 +5,9 @@
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWithProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import CodingFactoryLogo from "./components/CodingFactoryLogo";
-// import Layout from "./components/Layout.tsx";
+import Layout from "./components/Layout.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
-// import NameChanger from "./components/NameChanger.tsx";
+import NameChanger from "./components/NameChanger.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import Counter from "./components/Counter.tsx";
@@ -20,26 +20,25 @@ function App() {
 
   return (
     <>
-        {/*<Layout>*/}
+      <Layout>
       {/*<ViteIntro/>*/}
-    {/*<ClassComponent/>*/}
-    {/*  <FunctionalComponent/>*/}
-    {/*  <ArrowFunctionalComponent/>*/}
-    {/*    <ArrowFunctionalComponentWithProps title="Is an Arrow Functional Component with Props!"/>*/}
-    {/*  <ArrowFunctionalComponentWithPropsType*/}
-    {/*      title="Is an Arrow Functional Component with Props!"*/}
-    {/*      description="This is a description."/>*/}
+      {/*<ClassComponent/>*/}
+      {/*<FunctionalComponent/>*/}
+      {/*<ArrowFunctionalComponent/>*/}
+      {/*<ArrowFunctionalComponentWithProps title="Is an Arrow Functional Component with Props!"/>*/}
+      {/*<ArrowFunctionalComponentWithPropsType*/}
       {/*    title="Is an Arrow Functional Component with Props"*/}
       {/*    description="this is a description"*/}
-      {/*  <ClassComponentWithState/>*/}
-      {/*      <FunctionalComponentWithState/>*/}
-      {/*      <Counter/>*/}
-      {/*      <NameChanger />*/}
-      {/*      <CounterWithMoreStates />*/}
-      {/*      <CounterAdvanced />*/}
-      {/*      <CounterWithCustomHook/>*/}
-      {/*      <CounterWithReducer/>*/}
-      {/*  </Layout>*/}
+      {/*<CodingFactoryLogo />*/}
+      {/*<ClassComponentWithState/>*/}
+      {/*<FunctionalComponentWithState/>*/}
+      {/*<Counter/>*/}
+      <NameChanger />
+      {/*<CounterWithMoreStates />*/}
+      {/*<CounterAdvanced />*/}
+      {/*<CounterWithCustomHook/>*/}
+      {/*<CounterWithReducer/>*/}
+      </Layout>
     </>
   );
 }
