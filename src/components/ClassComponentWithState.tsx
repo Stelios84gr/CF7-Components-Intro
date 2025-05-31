@@ -32,7 +32,9 @@ render() {
             Increase
         </button>
         <button className="bg-red-400 text-white py-2 px-4"
-        onClick={this.reset}>
+        onClick={this.reset}
+        >
+            Reset
         </button>
         </div>
         </div>
