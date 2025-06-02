@@ -1,5 +1,7 @@
 import CounterButton from "./CounterButton.tsx";
 import {useState} from "react";
+
+// use of type in arrow functional component because state is now an object
 type CounterState = {
     count: number;
     lastAction: string;
@@ -7,7 +9,7 @@ type CounterState = {
 }
 
 const CounterAdvanced = () => {
-
+    // definition of useState hook type (<>) because it's custom
     const [state, setState] = useState<CounterState>({
         count: 0,
         lastAction: "",
@@ -45,7 +47,6 @@ const CounterAdvanced = () => {
     return (
         <>
             <div className="space-y-4 text-2xl pt-12">
-                {/*βάζουμε state. πριν πλέον, γιατί το state είναι object με key-values*/}
                 <h1 className="text-center">Count is {state.count}</h1>
                 <div className="text-center space-x-4">
                     <CounterButton onClick={increaseCount} label="Increase"/>
