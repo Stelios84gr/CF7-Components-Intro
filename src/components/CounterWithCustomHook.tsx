@@ -1,10 +1,14 @@
 import CounterButton from "./CounterButton.tsx";
 import {useCounter} from "../hooks/useCounter.ts";
+// import {useAdvancedCounter} from "../hooks/useAdvancedCounter.ts";
 
 const CounterWithCustomHook = () => {
 
     // custom hook function
-    const { count, increase, decrease, reset } = useCounter()
+    const { count, increase, decrease, reset } = useCounter();
+
+    // advanced alternative
+    // const { count, increase, decrease, reset, lastAction, time } = useAdvancedCounter();
 
     return (
         <>
@@ -17,7 +21,8 @@ const CounterWithCustomHook = () => {
                                    addClass="bg-cf-dark-red"/>
                 </div>
             </div>
-            {/*<p>Last change: <strong>{state.lastAction} at {state.time}</strong></p>*/}
+            {/*with advanced hook*/}
+            {/*<p>Last change: <strong>{lastAction} at {time}</strong></p>*/}
         </>
     )
 }
