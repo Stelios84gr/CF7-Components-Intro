@@ -14,7 +14,7 @@ const CounterAdvanced = () => {
         time: "",
         });
 
-    const getCurrentTime = () => new Date().toLocaleDateString();
+    const getCurrentTime = () => new Date().toLocaleString();
 
     const increaseCount = () => {
         setState({
