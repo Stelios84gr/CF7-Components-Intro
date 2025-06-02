@@ -6,7 +6,7 @@ const CounterWithMoreStates = () => {
     const [lastAction, setLastAction] = useState("");
     const [time, setTime] = useState("");
 
-    const getCurrentTime = () => new Date().toLocaleDateString();
+    const getCurrentTime = () => new Date().toLocaleString();
 
     const increaseCount = () => {
         setCount(count + 1);
