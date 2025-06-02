@@ -4,7 +4,7 @@ const NameChanger = () => {
     const [name, setName] = useState("");
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setName(e.target.value);
+        setName(e.target.value);    // input field content
     }
 
     return (
