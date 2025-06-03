@@ -13,8 +13,8 @@ import Layout from "./components/Layout.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
-import CounterAdvancedWithCustomHook from "./components/CounterAdvancedWithCustomHook.tsx";
-// import CounterWithReducer from "./components/CounterWithReducer.tsx";
+// import CounterAdvancedWithCustomHook from "./components/CounterAdvancedWithCustomHook.tsx";
+import CounterWithReducer from "./components/CounterWithReducer.tsx";
 
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
       {/*<CounterWithMoreStates />*/}
       {/*<CounterAdvanced />*/}
       {/*<CounterWithCustomHook/>*/}
-      <CounterAdvancedWithCustomHook/>
-      {/*<CounterWithReducer/>*/}
+      {/*<CounterAdvancedWithCustomHook/>*/}
+      <CounterWithReducer/>
       </Layout>
     </>
   );
