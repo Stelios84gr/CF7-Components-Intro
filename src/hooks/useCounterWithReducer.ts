@@ -19,6 +19,8 @@ const initialState: CounterState = {
 
 const getCurrentTime = () => new Date().toLocaleTimeString();
 
+// takes state and action for parameters
+// 2nd CounterState refers to return; if return was different, another type would have to be declared above
 function reducer(state:CounterState, action:Action): CounterState {
     switch (action.type) {
         case "INCREASE":
@@ -54,6 +56,7 @@ export const useCounterWithReducer = () => {
     const decrease = () => dispatch({type: "DECREASE"});
     const reset = () => dispatch({type: "RESET"});
 
+    // state refers to the state of the case used
     return {
         count: state.count,
         lastAction: state.lastAction,
