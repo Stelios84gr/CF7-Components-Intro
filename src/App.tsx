@@ -9,12 +9,12 @@ import Layout from "./components/Layout.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import Counter from "./components/Counter.tsx";
-// import NameChanger from "./components/NameChanger.tsx";
+import NameChanger from "./components/NameChanger.tsx";
 // import CounterWithMoreStates from "./components/CounterWithMoreStates.tsx";
 // import CounterAdvanced from "./components/CounterAdvanced.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import CounterAdvancedWithCustomHook from "./components/CounterAdvancedWithCustomHook.tsx";
-import CounterWithReducer from "./components/CounterWithReducer.tsx";
+// import CounterWithReducer from "./components/CounterWithReducer.tsx";
 
 
 function App() {
@@ -34,12 +34,12 @@ function App() {
       {/*<ClassComponentWithState/>*/}
       {/*<FunctionalComponentWithState/>*/}
       {/*<Counter/>*/}
-      {/*<NameChanger />*/}
+      <NameChanger />
       {/*<CounterWithMoreStates />*/}
       {/*<CounterAdvanced />*/}
       {/*<CounterWithCustomHook/>*/}
       {/*<CounterAdvancedWithCustomHook/>*/}
-      <CounterWithReducer/>
+      {/*<CounterWithReducer/>*/}
       </Layout>
     </>
   );
