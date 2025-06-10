@@ -5,10 +5,10 @@ const NameChanger = () => {
 
     useEffect(() => {
         document.title = name ? `Hello, ${name}!` : "Hello, Stranger!"
-    }, [name])
+    }, [name])  // function runs when dependency changes
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setName(e.target.value);    // input field content
+        setName(e.target.value);
     }
 
     return (
