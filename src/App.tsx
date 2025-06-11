@@ -5,7 +5,7 @@
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWithProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import CodingFactoryLogo from "./components/CodingFactoryLogo";
-// import Layout from "./components/Layout.tsx";
+import Layout from "./components/Layout.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import Counter from "./components/Counter.tsx";
@@ -53,10 +53,12 @@ function App() {
       {/*<OnlineStatus/>*/}
       {/*</Layout>*/}
       <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomePage/>}/>
-            <Route path="/name-changer" element={<NameChangerPage/>}/>
-        </Routes>
+        <Layout>
+         <Routes>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="/name-changer" element={<NameChangerPage/>}/>
+         </Routes>
+        </Layout>
       </BrowserRouter>
     </>
   );
