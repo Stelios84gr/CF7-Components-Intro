@@ -5,7 +5,7 @@
 // import ArrowFunctionalComponentWithProps from "./components/ArrowFunctionalComponentWithProps.tsx";
 // import ArrowFunctionalComponentWithPropsType from "./components/ArrowFunctionalComponentWithPropsType.tsx";
 // import CodingFactoryLogo from "./components/CodingFactoryLogo";
-import Layout from "./components/Layout.tsx";
+// import Layout from "./components/Layout.tsx";
 // import ClassComponentWithState from "./components/ClassComponentWithState.tsx";
 // import FunctionalComponentWithState from "./components/FunctionalComponentWithState.tsx";
 // import Counter from "./components/Counter.tsx";
@@ -16,8 +16,10 @@ import Layout from "./components/Layout.tsx";
 // import CounterWithCustomHook from "./components/CounterWithCustomHook.tsx";
 // import CounterAdvancedWithCustomHook from "./components/CounterAdvancedWithCustomHook.tsx";
 // import CounterWithReducer from "./components/CounterWithReducer.tsx";
-import OnlineStatus from "./components/OnlineStatus.tsx";
-
+// import OnlineStatus from "./components/OnlineStatus.tsx";
+import {BrowserRouter, Routes, Route} from "react-router";
+import HomePage from "./pages/HomePage.tsx";
+import NameChangerPage from "./pages/NameChangerPage.tsx";
 
 function App() {
 
@@ -30,7 +32,6 @@ function App() {
 
   return (
     <>
-      <Layout>
       {/*<ViteIntro/>*/}
       {/*<ClassComponent/>*/}
       {/*<FunctionalComponent/>*/}
@@ -49,8 +50,14 @@ function App() {
       {/*<CounterWithCustomHook/>*/}
       {/*<CounterAdvancedWithCustomHook/>*/}
       {/*<CounterWithReducer/>*/}
-      <OnlineStatus/>
-      </Layout>
+      {/*<OnlineStatus/>*/}
+      {/*</Layout>*/}
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/name-changer" element={<NameChangerPage/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
