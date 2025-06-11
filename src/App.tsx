@@ -49,7 +49,7 @@ function App() {
       {/*<CounterWithCustomHook/>*/}
       {/*<CounterAdvancedWithCustomHook/>*/}
       {/*<CounterWithReducer/>*/}
-          <OnlineStatus/>
+      <OnlineStatus/>
       </Layout>
     </>
   );
