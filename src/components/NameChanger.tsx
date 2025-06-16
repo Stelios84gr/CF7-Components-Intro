@@ -19,7 +19,7 @@ const NameChanger = () => {
                     type="text"
                     value={name}
                     onChange={handleChange}
-                    className="border px-4 py-2"
+                    className="border px-4 py-2 mt-4"
                 />
             </div>
         </>
