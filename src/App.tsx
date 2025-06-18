@@ -26,6 +26,8 @@ import RouterLayout from "./components/RouterLayout.tsx";
 import ExamplesPage from "./pages/ExamplesPage.tsx";
 import RouterExamplesLayout from "./components/RouterExamplesLayout.tsx";
 import FilePage from "./pages/FilePage.tsx";
+import AutoRedirectPage from "./pages/AutoRedirectPage.tsx";
+import AutoRedirectAdvancedPage from "./pages/AutoRedirectAdvancedPage.tsx";
 
 function App() {
 
@@ -73,7 +75,9 @@ function App() {
                 <Route index element={<ExamplesPage/>}/> {/* /examples/ */}
                 <Route path="name-changer" element={<NameChangerPage/>}/>
                 <Route path="online-status" element={<OnlineStatusPage/>}/>
-                <Route path="files/*" element ={<FilePage/>}/>
+                <Route path="files/*" element={<FilePage/>}/>
+                <Route path="auto-redirect" element={<AutoRedirectPage/>}/>
+                <Route path="auto-redirect-advanced" element={<AutoRedirectAdvancedPage/>}/>
             </Route>
          </Routes>
         {/*</Layout>*/}

@@ -32,6 +32,24 @@ const ExamplesSection = () => {
                             File Page
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to="/examples/auto-redirect"
+                            className={( {isActive}) =>
+                                isActive ? "text-cf-dark-red underline underline-offset-5" : "text-cf-gray" }
+                        >
+                            Auto-redirect Page
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/examples/auto-redirect-advanced"
+                            className={( {isActive}) =>
+                                isActive ? "text-cf-dark-red underline underline-offset-5" : "text-cf-gray" }
+                        >
+                            Auto-redirect Advanced Page
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </>
