@@ -64,6 +64,9 @@ function App() {
             <Route element={<RouterLayout/>}> {/* instead of Layout */}
                 {/* instead of <Route path="/" element={<HomePage/>}/> */}
                 <Route index element={<HomePage/>}/>
+                {/*usersId: parameter id*/}
+                <Route path="users/:userId" element={<UserPage/>}/>
+                <Route path="users" element={<UserPage/>}/>
             </Route>
 
             <Route path="examples" element={<RouterExamplesLayout/>}>
@@ -72,9 +75,6 @@ function App() {
                 <Route path="online-status" element={<OnlineStatusPage/>}/>
                 <Route path="files/*" element ={<FilePage/>}/>
             </Route>
-            {/*usersId: parameter id*/}
-            <Route path="users/:userId" element={<UserPage/>}/>
-            <Route path="users" element={<UserPage/>}/>
          </Routes>
         {/*</Layout>*/}
       </BrowserRouter>
