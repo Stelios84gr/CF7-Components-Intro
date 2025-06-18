@@ -10,6 +10,6 @@ const FilePage = () => {
             <h1>Document name: {filePath}</h1>
         </>
     )
-}
+};
 
 export default FilePage;
