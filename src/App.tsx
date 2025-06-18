@@ -25,6 +25,7 @@ import UserPage from "./pages/UserPage.tsx";
 import RouterLayout from "./components/RouterLayout.tsx";
 import ExamplesPage from "./pages/ExamplesPage.tsx";
 import RouterExamplesLayout from "./components/RouterExamplesLayout.tsx";
+import FilePage from "./pages/FilePage.tsx";
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
                 <Route index element={<ExamplesPage/>}/> {/* /examples/ */}
                 <Route path="name-changer" element={<NameChangerPage/>}/>
                 <Route path="online-status" element={<OnlineStatusPage/>}/>
+                <Route path="files/*" element ={<FilePage/>}/>
             </Route>
             {/*usersId: parameter id*/}
             <Route path="users/:userId" element={<UserPage/>}/>

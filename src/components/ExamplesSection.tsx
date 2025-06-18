@@ -23,6 +23,15 @@ const ExamplesSection = () => {
                             Online Status
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to="/examples/file/*"
+                            className={( {isActive}) =>
+                                isActive ? "text-cf-dark-red underline underline-offset-5" : "text-cf-gray" }
+                        >
+                            File Page
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </>
