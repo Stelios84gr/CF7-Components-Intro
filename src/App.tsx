@@ -28,6 +28,7 @@ import RouterExamplesLayout from "./components/RouterExamplesLayout.tsx";
 import FilePage from "./pages/FilePage.tsx";
 import AutoRedirectPage from "./pages/AutoRedirectPage.tsx";
 import AutoRedirectAdvancedPage from "./pages/AutoRedirectAdvancedPage.tsx";
+import NotFoundPage from "./pages/NotFoundPage.tsx";
 
 function App() {
 
@@ -66,9 +67,6 @@ function App() {
             <Route element={<RouterLayout/>}> {/* instead of Layout */}
                 {/* instead of <Route path="/" element={<HomePage/>}/> */}
                 <Route index element={<HomePage/>}/>
-                {/*usersId: parameter id*/}
-                <Route path="users/:userId" element={<UserPage/>}/>
-                <Route path="users" element={<UserPage/>}/>
             </Route>
 
             <Route path="examples" element={<RouterExamplesLayout/>}>
@@ -79,6 +77,11 @@ function App() {
                 <Route path="auto-redirect" element={<AutoRedirectPage/>}/>
                 <Route path="auto-redirect-advanced" element={<AutoRedirectAdvancedPage/>}/>
             </Route>
+
+            {/*usersId: parameter id*/}
+            <Route path="users/:userId" element={<UserPage/>}/>
+            <Route path="users" element={<UserPage/>}/>
+            <Route path="*" element={<NotFoundPage/>}/> {/* always goes last */}
          </Routes>
         {/*</Layout>*/}
       </BrowserRouter>
